@@ -60,6 +60,9 @@ public class WebController {
     }
 
 
+
+
+
     @RequestMapping(value = "/user/project", method = RequestMethod.GET)
     @ResponseStatus(value=HttpStatus.OK)
     @ResponseBody
@@ -102,6 +105,58 @@ public class WebController {
         if(proj.getId() != 0) return "Created";
         return "Error creating";
     }
+
+
+    @RequestMapping(value = "/user/project", method = RequestMethod.PUT)
+    @ResponseStatus(value=HttpStatus.OK)
+    @ResponseBody
+    public String userProjectsPut(@RequestBody String project) throws Exception {
+        Gson parser = new Gson();
+        Properties data = parser.fromJson(project, Properties.class);
+        String title = data.getProperty("title");
+        String projectId = data.getProperty("projectId");
+        String completedBy = data.getProperty("completedBy");
+        String reopen = data.getProperty("reopen");
+
+        Project currentProject = projectHC.findProject(Integer.parseInt(projectId));
+        if(title != null){
+            currentProject.setTitle(title);
+        }
+
+        if(completedBy != null){
+            User u = userHC.findUser(Integer.parseInt(completedBy));
+            currentProject.completeProject(u);
+        }
+
+        if(reopen != null){
+            if(Boolean.parseBoolean(reopen)){
+                currentProject.reopenProject();
+            }
+        }
+
+        projectHC.edit(currentProject);
+        return "Edited";
+    }
+
+
+    @RequestMapping(value = "/user/project", method = RequestMethod.DELETE)
+    @ResponseStatus(value=HttpStatus.OK)
+    @ResponseBody
+    public String userProjectsDelete(@RequestBody String project) throws Exception {
+        Gson parser = new Gson();
+        Properties data = parser.fromJson(project, Properties.class);
+        String projectId = data.getProperty("projectId");
+
+        Project currentProject = projectHC.findProject(Integer.parseInt(projectId));
+
+        projectHC.destroy(currentProject.getId());
+        return "Deleted";
+    }
+
+
+
+
+
 
 
     @RequestMapping(value = "/project/task", method = RequestMethod.GET)
@@ -180,81 +235,19 @@ public class WebController {
         return "Edited";
     }
 
+    @RequestMapping(value = "/project/task", method = RequestMethod.DELETE)
+    @ResponseStatus(value=HttpStatus.OK)
+    @ResponseBody
+    public String projectTasksDelete(@RequestBody String task) throws Exception {
+        Gson parser = new Gson();
+        Properties data = parser.fromJson(task, Properties.class);
+        String taskId = data.getProperty("taskId");
 
 
+        Task currentTask = taskHC.findTask(Integer.parseInt(taskId));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
-    @ResponseStatus(value= HttpStatus.OK)
-    public String loginPageGet(){
-        return "login";
+        taskHC.destroy(currentTask.getId());
+        return "Deleted";
     }
-
-    @RequestMapping(value = "/loginPage", method = RequestMethod.POST)
-    @ResponseStatus(value= HttpStatus.OK)
-    public String loginPagePost(@RequestParam(value="login") String login,
-                            @RequestParam(value="pass") String pass,
-                            ModelMap model){
-
-        User getUser = userHC.findUser(login);
-        if(getUser != null){
-            if(login.equals(getUser.getLogin()) && pass.equals(getUser.getPass())){
-                GsonBuilder gsonBuilder = new GsonBuilder();
-                gsonBuilder.registerTypeAdapter(User.class, new UserGSONSerializer());
-                Gson parser = gsonBuilder.create();
-
-                model.put("user", parser.toJson(getUser));
-                return "redirect:main";
-            }
-        }
-        model.addAttribute("error", true);
-        return "login";
-    }
-
-
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
-    public String main(@RequestParam(value = "user") String user, ModelMap model){
-        if(user.isEmpty()){
-            GsonBuilder gsonBuilder = new GsonBuilder();
-            gsonBuilder.registerTypeAdapter(User.class, new UserGSONSerializer());
-            Gson parser = gsonBuilder.create();
-            model.addAttribute("kintamasis", user);
-        }
-        else model.addAttribute("kintamasis", "Welcome");
-        return "main";
-    }
-
-
-
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String index(@ModelAttribute("user") User user, ModelMap model){
-        if(user != null){
-            GsonBuilder gsonBuilder = new GsonBuilder();
-            gsonBuilder.registerTypeAdapter(User.class, new UserGSONSerializer());
-            Gson parser = gsonBuilder.create();
-            model.addAttribute("kintamasis", parser.toJson(user));
-        }
-        else model.addAttribute("kintamasis", "Welcome");
-        return "main";
-    }
-
-
-
-
 
 }
