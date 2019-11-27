@@ -122,6 +122,9 @@ public class Project implements Serializable {
 
     }
 
+    public User getCompletedBy() {
+        return completedBy;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -132,4 +135,7 @@ public class Project implements Serializable {
         return this.toString().equals(other.toString());
     }
 
+    public Date getCreated() {
+        return created;
+    }
 }

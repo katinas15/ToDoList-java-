@@ -144,4 +144,20 @@ public class Task  implements Serializable {
     public void removeSubTask(Task t){
         this.subTasks.remove(t);
     }
+
+    public User getCreatedBy() {
+        return createdBy;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public User getCompletedBy() {
+        return completedBy;
+    }
+
+    public Date getCompleted() {
+        return completed;
+    }
 }
