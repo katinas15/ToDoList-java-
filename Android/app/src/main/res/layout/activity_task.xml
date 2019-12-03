@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskActivity">
+
+    <TextView
+        android:id="@+id/projectInfo"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/projectEditText"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Edit Project Title"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/projectEdit"
+        android:layout_width="match_parent"
+        android:layout_height="293dp"
+        android:layout_weight="1"
+        android:onClick="editProjectTitle"
+        android:text="Edit" />
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="New Task"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_weight="1"
+        android:onClick="createTask"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_weight="1"
+        android:text="Button" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubtaskActivity">
+
+    <TextView
+        android:id="@+id/taskInfo"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Edit Task Title"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/taskEdit"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:onClick="editTaskClick"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:onClick="toggleTaskClick"
+        android:text="Complete / Reopen Task" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_weight="1"
+        android:onClick="deleteTaskClick"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/subtaskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="New Subtask"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_weight="1"
+        android:onClick="createSubtaskCilck"
+        android:text="Create" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="5labor:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/5labor_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="5labor/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="5labor" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" />
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+          <element id="library" level="project" name="Spring Web Services-2.0.2" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.6" />
+          <element id="library" level="project" name="Spring Security-3.2.5" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.18" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
