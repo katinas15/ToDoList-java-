@@ -15,9 +15,10 @@ import com.example.bnd.lab.Project;
 import com.example.bnd.lab.Task;
 import com.example.bnd.lab.User;
 
+import static com.example.bnd.MainActivity.address;
+
 public class SubtaskActivity extends AppCompatActivity {
-    //String address = "http://158.129.227.154:8080/";
-    String address = "http://192.168.1.144:8080/";
+
 
     Task currentTask;
     User currentUser;

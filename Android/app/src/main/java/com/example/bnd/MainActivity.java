@@ -17,8 +17,7 @@ import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
 
-    //String address = "http://158.129.227.154:8080/";
-    String address = "http://192.168.1.144:8080/";
+    public static String address = "http://192.168.56.1:8080/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

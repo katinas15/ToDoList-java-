@@ -25,10 +25,11 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.bnd.MainActivity.address;
+
 public class CompanyProjectTaskActivity extends AppCompatActivity {
 
-    //String address = "http://158.129.227.154:8080/";
-    String address = "http://192.168.1.144:8080/";
+
     Company currentCompany;
     Project currentProject;
 

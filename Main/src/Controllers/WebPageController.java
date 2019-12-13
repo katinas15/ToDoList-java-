@@ -1,6 +1,10 @@
 package Controllers;
 
-import ToDoMain.*;
+import GSONSerializers.UserGSONSerializer;
+import Hibernate.ProjectHibernateController;
+import Hibernate.TaskHibernateController;
+import Hibernate.UserHibernateController;
+import Objektai.User;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.springframework.http.HttpStatus;

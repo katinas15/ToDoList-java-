@@ -1,16 +1,24 @@
 package Controllers;
 
 
+import GSONSerializers.*;
+import Hibernate.CompanyHibernateController;
+import Hibernate.ProjectHibernateController;
+import Hibernate.TaskHibernateController;
+import Hibernate.UserHibernateController;
+import Objektai.Company;
+import Objektai.Project;
+import Objektai.Task;
+import Objektai.User;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import ToDoMain.*;
 
 import com.google.gson.reflect.TypeToken;
 import org.springframework.http.HttpStatus;
 
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManagerFactory;
@@ -20,6 +28,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import static FXController.FxMain.passwordSalt;
 
 @Controller
 @SessionAttributes("user")
@@ -41,11 +51,17 @@ public class WebController {
 
         User paduotas  = parser.fromJson(user, User.class);
         User getUser = userHC.findUser(paduotas.getLogin());
-        if(getUser != null){
-            if(paduotas.getLogin().equals(getUser.getLogin()) && paduotas.getPass().equals(getUser.getPass())){
+        if(getUser == null) {
+            return "Neteisingai ivesti duomenys";
+        }
+
+        if(paduotas.getLogin().equals(getUser.getLogin())){
+            BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+            if(bCryptPasswordEncoder.matches(paduotas.getPass() + passwordSalt, getUser.getPass())) {
                 return parser.toJson(getUser);
             }
         }
+
         return "Neteisingai ivesti duomenys";
     }
 
@@ -296,11 +312,17 @@ public class WebController {
 
         Company paduotas  = parser.fromJson(company, Company.class);
         Company getCompany = companyHC.findCompany(paduotas.getLogin());
-        if(getCompany != null){
-            if(paduotas.getLogin().equals(getCompany.getLogin()) && paduotas.getPass().equals(getCompany.getPass())){
+        if(getCompany == null) {
+            return "Neteisingai ivesti duomenys";
+        }
+
+        if(paduotas.getLogin().equals(getCompany.getLogin())){
+            BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+            if(bCryptPasswordEncoder.matches(paduotas.getPass() + passwordSalt, getCompany.getPass())) {
                 return parser.toJson(getCompany);
             }
         }
+
         return "Neteisingai ivesti duomenys";
     }
 
