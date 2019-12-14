@@ -26,23 +26,23 @@ import static com.example.bnd.MainActivity.address;
 
 public class CompanyUsersActivity extends AppCompatActivity {
 
+    String token;
 
-    Company currentCompany;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_users);
         Intent from = this.getIntent();
-        currentCompany = (Company) from.getSerializableExtra("company");
+        token = (String)from.getSerializableExtra("token");
         GetCompanyUsers users = new GetCompanyUsers();
-        users.execute(Integer.toString(currentCompany.getId()));
+        users.execute(token);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         GetCompanyUsers users = new GetCompanyUsers();
-        users.execute(Integer.toString(currentCompany.getId()));
+        users.execute(token);
     }
 
     private final class GetCompanyUsers extends AsyncTask<String, String, String> {
@@ -54,7 +54,7 @@ public class CompanyUsersActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String dataParams = params[0];
             System.out.println("ISSIUSTA: " + dataParams);
-            String url = address + "5labor_war/company/user?id="+dataParams;
+            String url = address + "5labor_war/company/user?reqToken="+dataParams;
             try {
                 return TinkloKontroleris.sendGet(url);
             } catch (Exception e) {

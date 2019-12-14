@@ -19,9 +19,8 @@ import static com.example.bnd.MainActivity.address;
 
 public class SubtaskActivity extends AppCompatActivity {
 
-
     Task currentTask;
-    User currentUser;
+    String token;
     Project currentProject;
 
     @Override
@@ -30,14 +29,14 @@ public class SubtaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subtask);
         Intent from = this.getIntent();
         currentProject = (Project) from.getSerializableExtra("project");
-        currentUser = (User)from.getSerializableExtra("user");
+        token = (String)from.getSerializableExtra("token");
         currentTask = (Task)from.getSerializableExtra("task");
         TextView info = (TextView)findViewById(R.id.taskInfo);
         info.setText("Task - " + currentTask);
     }
 
     public void deleteTaskClick(View view){
-        String send = "{\"taskId\":" + currentTask.getId() + "}";
+        String send = "{\"reqToken\":" + token + ",\"taskId\":" + currentTask.getId() + "}";
         DeleteTask create = new DeleteTask();
         create.execute(send);
     }
@@ -51,7 +50,7 @@ public class SubtaskActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            String url =  address + "5labor_war/project/task";
+            String url = address + "5labor_war/project/task";
             String postDataParams = params[0];
             System.out.println("ISSIUSTA: " + postDataParams);
             try {
@@ -70,18 +69,18 @@ public class SubtaskActivity extends AppCompatActivity {
 
     public void editTaskClick(View view){
         EditText title = findViewById(R.id.taskEditText);
-        String send = "{\"taskId\":" + currentTask.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"taskId\":" + currentTask.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         EditTask create = new EditTask();
         create.execute(send);
     }
 
     public void toggleTaskClick(View view){
         if(currentTask.getCompletedBy() == null){
-            String send = "{\"taskId\":\"" + currentTask.getId() + "\", \"completedBy\":\"" + currentUser.getId() + "\"}";
+            String send = "{\"reqToken\":" + token + ",\"taskId\":\"" + currentTask.getId() + "\", \"completed\":\"" + true + "\"}";
             EditTask complete = new EditTask();
             complete.execute(send);
         } else {
-            String send = "{\"taskId\":\"" + currentTask.getId() + "\", \"reopen\":\"" + true+ "\"}";
+            String send = "{\"reqToken\":" + token + ",\"taskId\":\"" + currentTask.getId() + "\", \"reopen\":\"" + true + "\"}";
             EditTask complete = new EditTask();
             complete.execute(send);
         }
@@ -116,7 +115,7 @@ public class SubtaskActivity extends AppCompatActivity {
 
     public void createSubtaskCilck(View view){
         EditText title = findViewById(R.id.subtaskEditText);
-        String send = "{\"userId\":" + currentUser.getId() + ",\"taskId\":" + currentTask.getId() + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"taskId\":" + currentTask.getId() + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         CreateNewTask create = new CreateNewTask();
         create.execute(send);
     }

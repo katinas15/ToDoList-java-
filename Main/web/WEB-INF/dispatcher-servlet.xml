@@ -15,7 +15,7 @@
         <property name="mappings">
             <props>
 
-                <prop key="*">WebController</prop>
+                <prop key="*">ctrl</prop>
             </props>
         </property>
     </bean>
@@ -26,7 +26,7 @@
           p:suffix =".jsp"/>
 
 
-    <bean name="WebController"
-          class="Controllers.WebController"
+    <bean name="ctrl"
+          class="WebControllers.WebController"
             />
 </beans>

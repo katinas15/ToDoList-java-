@@ -21,9 +21,4 @@
         android:onClick="companyProjects"
         android:text="Company Projects" />
 
-    <TextView
-        android:id="@+id/companyText"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:text="TextView" />
 </LinearLayout>

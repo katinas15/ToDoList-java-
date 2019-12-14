@@ -20,8 +20,8 @@ import static com.example.bnd.MainActivity.address;
 public class CompanyProjectSubtask extends AppCompatActivity {
 
     Task currentTask;
-    User currentUser;
     Project currentProject;
+    String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +30,13 @@ public class CompanyProjectSubtask extends AppCompatActivity {
         Intent from = this.getIntent();
         currentProject = (Project) from.getSerializableExtra("project");
         currentTask = (Task)from.getSerializableExtra("task");
+        token = (String)from.getSerializableExtra("token");
         TextView info = (TextView)findViewById(R.id.taskInfo);
         info.setText("Task - " + currentTask);
     }
 
     public void deleteTaskClick(View view){
-        String send = "{\"taskId\":" + currentTask.getId() + "}";
+        String send = "{\"reqToken\":" + token + ",\"taskId\":" + currentTask.getId() + "}";
         DeleteTask create = new DeleteTask();
         create.execute(send);
     }
@@ -68,7 +69,7 @@ public class CompanyProjectSubtask extends AppCompatActivity {
 
     public void editTaskClick(View view){
         EditText title = findViewById(R.id.taskEditText);
-        String send = "{\"taskId\":" + currentTask.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"taskId\":" + currentTask.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         EditTask create = new EditTask();
         create.execute(send);
     }

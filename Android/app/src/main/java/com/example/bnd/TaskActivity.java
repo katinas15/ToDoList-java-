@@ -30,19 +30,19 @@ public class TaskActivity extends AppCompatActivity {
 
 
     Project currentProject;
-    User currentUser;
+    String token;
 
     public void editProjectTitle(View view){
         EditText title = findViewById(R.id.projectEditText);
         currentProject.setTitle(title.getText().toString());
-        String send = "{\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         EditProject create = new EditProject();
         create.execute(send);
     }
 
     public void createTask(View view){
         EditText title = findViewById(R.id.taskEditText);
-        String send = "{\"userId\":" + currentUser.getId() + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         CreateNewTask create = new CreateNewTask();
         create.execute(send);
     }
@@ -115,7 +115,7 @@ public class TaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_task);
         Intent from = this.getIntent();
         currentProject = (Project) from.getSerializableExtra("project");
-        currentUser = (User)from.getSerializableExtra("user");
+        token = (String)from.getSerializableExtra("token");
         resetText();
     }
 
@@ -142,7 +142,7 @@ public class TaskActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String dataParams = params[0];
             System.out.println("ISSIUSTA: " + dataParams);
-            String url = address + "5labor_war/project/task?id="+dataParams;
+            String url = address + "5labor_war/project/task?reqToken=" + token + "&id="+dataParams;
             try {
                 return TinkloKontroleris.sendGet(url);
             } catch (Exception e) {
@@ -172,7 +172,7 @@ public class TaskActivity extends AppCompatActivity {
                             info.show();
                             Intent newWindow = new Intent(TaskActivity.this, com.example.bnd.SubtaskActivity.class);
                             newWindow.putExtra("task", taskai.get(position));
-                            newWindow.putExtra("user", currentUser);
+                            newWindow.putExtra("token", token);
                             newWindow.putExtra("project", currentProject);
                             startActivity(newWindow);
                         }

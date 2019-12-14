@@ -66,12 +66,11 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             System.out.println("GAUTA: " + result);
-            if (result != null && result.contains("{")) {
+            if (result != null && !result.equals("Neteisingai ivesti duomenys")) {
                 Gson parseris = new Gson();
                 try {
-                    User gautas = parseris.fromJson(result, User.class);
                     Intent intent = new Intent(MainActivity.this, com.example.bnd.ListActivity.class);
-                    intent.putExtra("user", gautas);
+                    intent.putExtra("token", result);
                     startActivity(intent);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -107,12 +106,11 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             System.out.println("GAUTA: " + result);
-            if (result != null && result.contains("{")) {
+            if (result != null && !result.equals("Neteisingai ivesti duomenys")) {
                 Gson parseris = new Gson();
                 try {
-                    Company gautas = parseris.fromJson(result, Company.class);
                     Intent intent = new Intent(MainActivity.this, com.example.bnd.CompanyActivity.class);
-                    intent.putExtra("company", gautas);
+                    intent.putExtra("token", result);
                     startActivity(intent);
                 } catch (Exception e) {
                     e.printStackTrace();

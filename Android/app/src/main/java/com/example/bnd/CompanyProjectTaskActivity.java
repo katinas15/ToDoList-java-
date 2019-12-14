@@ -29,14 +29,13 @@ import static com.example.bnd.MainActivity.address;
 
 public class CompanyProjectTaskActivity extends AppCompatActivity {
 
-
-    Company currentCompany;
+    String token;
     Project currentProject;
 
     public void editProjectTitle(View view){
         EditText title = findViewById(R.id.projectEditText);
         currentProject.setTitle(title.getText().toString());
-        String send = "{\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"projectId\":" + currentProject.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
         EditProject create = new EditProject();
         create.execute(send);
     }
@@ -78,7 +77,7 @@ public class CompanyProjectTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_company_project_task);
         Intent from = this.getIntent();
         currentProject = (Project) from.getSerializableExtra("project");
-        currentCompany = (Company) from.getSerializableExtra("company");
+        token = (String)from.getSerializableExtra("token");
         resetText();
     }
 
@@ -105,7 +104,7 @@ public class CompanyProjectTaskActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String dataParams = params[0];
             System.out.println("ISSIUSTA: " + dataParams);
-            String url = address + "5labor_war/project/task?id="+dataParams;
+            String url = address + "5labor_war/project/task?reqToken=" + token + "&id="+dataParams;
             try {
                 return TinkloKontroleris.sendGet(url);
             } catch (Exception e) {
@@ -134,6 +133,7 @@ public class CompanyProjectTaskActivity extends AppCompatActivity {
                             info.show();
                             Intent newWindow = new Intent(CompanyProjectTaskActivity.this, com.example.bnd.CompanyProjectSubtask.class);
                             newWindow.putExtra("task", taskai.get(position));
+                            newWindow.putExtra("token", token);
                             newWindow.putExtra("project", currentProject);
                             startActivity(newWindow);
                         }

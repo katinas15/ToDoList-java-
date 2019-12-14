@@ -26,22 +26,22 @@ import static com.example.bnd.MainActivity.address;
 
 public class CompanyProjectActivity extends AppCompatActivity {
 
-    Company currentCompany;
+    String token;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_project);
         Intent from = this.getIntent();
-        currentCompany = (Company) from.getSerializableExtra("company");
+        token = (String)from.getSerializableExtra("token");
         GetCompanyProjects projects = new GetCompanyProjects();
-        projects.execute(Integer.toString(currentCompany.getId()));
+        projects.execute();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         GetCompanyProjects projects = new GetCompanyProjects();
-        projects.execute(Integer.toString(currentCompany.getId()));
+        projects.execute();
     }
 
     private final class GetCompanyProjects extends AsyncTask<String, String, String> {
@@ -51,9 +51,8 @@ public class CompanyProjectActivity extends AppCompatActivity {
         }
         @Override
         protected String doInBackground(String... params) {
-            String dataParams = params[0];
-            System.out.println("ISSIUSTA: " + dataParams);
-            String url = address + "5labor_war/company/project?id="+dataParams;
+            System.out.println("ISSIUSTA: " + token);
+            String url = address + "5labor_war/company/project?reqToken=" + token;
             try {
                 return TinkloKontroleris.sendGet(url);
             } catch (Exception e) {
@@ -81,7 +80,7 @@ public class CompanyProjectActivity extends AppCompatActivity {
                             Toast info = Toast.makeText(CompanyProjectActivity.this, "Selected " + projects.get(position), Toast.LENGTH_LONG);
                             info.show();
                             Intent newWindow = new Intent(CompanyProjectActivity.this, com.example.bnd.CompanyProjectTaskActivity.class);
-                            newWindow.putExtra("company", currentCompany);
+                            newWindow.putExtra("token", token);
                             newWindow.putExtra("project", projects.get(position));
                             startActivity(newWindow);
                         }

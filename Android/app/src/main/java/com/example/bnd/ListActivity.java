@@ -26,11 +26,11 @@ import static com.example.bnd.MainActivity.address;
 
 public class ListActivity extends AppCompatActivity {
 
-    User currentUser;
+    String token;
 
     public void createProject(View view){
         EditText title = findViewById(R.id.projectEditText);
-        String send = "{\"userId\":" + currentUser.getId() + ",\"title\":\"" + title.getText().toString() + "\"}";
+        String send = "{\"reqToken\":" + token + ",\"title\":\"" + title.getText().toString() + "\"}";
         CreateNewProject create = new CreateNewProject();
         create.execute(send);
     }
@@ -61,7 +61,7 @@ public class ListActivity extends AppCompatActivity {
             System.out.println("GAUTA: " + result);
             if (result != null) {
                 GetUserProjects allProjects = new GetUserProjects();
-                allProjects.execute(Integer.toString(currentUser.getId()));
+                allProjects.execute(token);
             }
         }
     }
@@ -74,17 +74,16 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listas);
         Intent dabar = this.getIntent();
-        currentUser = (User)dabar.getSerializableExtra("user");
-        Toast.makeText(ListActivity.this, "Dabar prisijunges "+ currentUser.getLogin(), Toast.LENGTH_LONG).show();
+        token = (String)dabar.getSerializableExtra("token");
         GetUserProjects allProjects = new GetUserProjects();
-        allProjects.execute(Integer.toString(currentUser.getId()));
+        allProjects.execute(token);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         GetUserProjects allProjects = new GetUserProjects();
-        allProjects.execute(Integer.toString(currentUser.getId()));
+        allProjects.execute(token);
     }
 
     private final class GetUserProjects extends AsyncTask<String, String, String> {
@@ -96,7 +95,7 @@ public class ListActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String dataParams = params[0];
             System.out.println("ISSIUSTA: " + dataParams);
-            String url = address + "5labor_war/user/project?id="+dataParams;
+            String url = address + "5labor_war/user/project?reqToken="+dataParams;
             try {
                 return TinkloKontroleris.sendGet(url);
             } catch (Exception e) {
@@ -125,7 +124,7 @@ public class ListActivity extends AppCompatActivity {
                             info.show();
                             Intent newWindow = new Intent(ListActivity.this, com.example.bnd.TaskActivity.class);
                             newWindow.putExtra("project", projektai.get(position));
-                            newWindow.putExtra("user", currentUser);
+                            newWindow.putExtra("token", token);
                             startActivity(newWindow);
                         }
                     });
@@ -139,42 +138,4 @@ public class ListActivity extends AppCompatActivity {
         }
     }
 
-    private final class GetUserList extends AsyncTask<String, String, String> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-        @Override
-        protected String doInBackground(String... params) {
-            String url = address + "5labor_war/user/all";
-            try {
-                return TinkloKontroleris.sendGet(url);
-            } catch (Exception e) {
-                e.printStackTrace();
-                return "nepavyko gauti duomenu is web";
-            }
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-            System.out.println("GAUTA: " + result);
-            if (result != null) {
-                Gson parseris = new Gson();
-                try {
-                    Type listType = new TypeToken<ArrayList<User>>(){}.getType();
-                    List<User> vartotojai = new Gson().fromJson(result, listType);
-                    ListView sar = findViewById(R.id.list);
-                    ArrayAdapter<User> arrayAdapter = new ArrayAdapter<User>
-                            (ListActivity.this, android.R.layout.simple_list_item_1, vartotojai);
-                    sar.setAdapter(arrayAdapter);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Toast.makeText(ListActivity.this, "Neteisingi duomenys", Toast.LENGTH_LONG).show();
-                }
-            } else {
-                Toast.makeText(ListActivity.this, "Neteisingi duomenys", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
 }

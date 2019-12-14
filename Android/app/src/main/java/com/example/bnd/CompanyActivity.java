@@ -14,27 +14,25 @@ import com.example.bnd.lab.Project;
 import com.example.bnd.lab.User;
 
 public class CompanyActivity extends AppCompatActivity {
-    Company currentCompany;
+    String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company);
         Intent from = this.getIntent();
-        currentCompany = (Company) from.getSerializableExtra("company");
-        TextView info = (TextView)findViewById(R.id.companyText);
-        info.setText("Company - " + currentCompany);
+        token = (String)from.getSerializableExtra("token");
     }
 
     public void companyUsers(View view){
         Intent newWindow = new Intent(CompanyActivity.this, com.example.bnd.CompanyUsersActivity.class);
-        newWindow.putExtra("company", currentCompany);
+        newWindow.putExtra("token", token);
         startActivity(newWindow);
     }
 
     public void companyProjects(View view){
         Intent newWindow = new Intent(CompanyActivity.this, com.example.bnd.CompanyProjectActivity.class);
-        newWindow.putExtra("company", currentCompany);
+        newWindow.putExtra("token", token);
         startActivity(newWindow);
     }
 
