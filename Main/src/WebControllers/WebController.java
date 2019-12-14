@@ -43,7 +43,7 @@ public class WebController {
     ProjectHibernateController projectHC = new ProjectHibernateController(factory);
     TaskHibernateController taskHC = new TaskHibernateController(factory);
     CompanyHibernateController companyHC = new CompanyHibernateController(factory);
-    Token token = new Token();
+
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseStatus(value= HttpStatus.OK)
@@ -61,6 +61,7 @@ public class WebController {
         if(login.equals(getUser.getLogin())){
             BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
             if(bCryptPasswordEncoder.matches(pass + passwordSalt, getUser.getPass())) {
+                Token token = new Token();
                 return token.createToken(getUser.getId());
             }
         }
@@ -88,6 +89,7 @@ public class WebController {
     @ResponseStatus(value=HttpStatus.OK)
     @ResponseBody
     public String userProjectsGet(@RequestParam String reqToken){
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -127,6 +129,7 @@ public class WebController {
         String title = data.getProperty("title");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -152,6 +155,7 @@ public class WebController {
         String reopen = data.getProperty("reopen");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -188,6 +192,7 @@ public class WebController {
         String projectId = data.getProperty("projectId");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -214,6 +219,7 @@ public class WebController {
     @ResponseStatus(value=HttpStatus.OK)
     @ResponseBody
     public String projectTasksGet(@RequestParam String reqToken, @RequestParam String id){
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -251,6 +257,7 @@ public class WebController {
         String taskId = data.getProperty("taskId");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -284,6 +291,7 @@ public class WebController {
         String reopen = data.getProperty("reopen");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -320,6 +328,7 @@ public class WebController {
         String taskId = data.getProperty("taskId");
 
         String reqToken = data.getProperty("reqToken");
+        Token token = new Token();
         int userId = token.checkToken(reqToken);
         if(userId  == 0) return "Incorrect Token";
 
@@ -355,6 +364,7 @@ public class WebController {
         if(login.equals(getCompany.getLogin())){
             BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
             if(bCryptPasswordEncoder.matches(pass + passwordSalt, getCompany.getPass())) {
+                Token token = new Token();
                 return token.createToken(getCompany.getId());
             }
         }
@@ -367,6 +377,7 @@ public class WebController {
     @ResponseStatus(value= HttpStatus.OK)
     @ResponseBody
     public String getCompanyUsers(@RequestParam String reqToken){
+        Token token = new Token();
         int companyId = token.checkToken(reqToken);
         if(companyId  == 0) return "Incorrect Token";
 
@@ -386,6 +397,7 @@ public class WebController {
     @ResponseStatus(value= HttpStatus.OK)
     @ResponseBody
     public String getCompanyProjects(@RequestParam String reqToken){
+        Token token = new Token();
         int companyId = token.checkToken(reqToken);
         if(companyId  == 0) return "Incorrect Token";
 

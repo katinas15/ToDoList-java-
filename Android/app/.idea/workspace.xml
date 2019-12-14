@@ -6,61 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ff41c09-8655-4d4b-a9d4-6c9b51ede7df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/TaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/TaskActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war/5labor_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war/5labor_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/testingClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/testingClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/Controllers/WebController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/Controllers/WebController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/Controllers/WebController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/Controllers/WebController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/testingClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/production/5labor/testingClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/Controllers/WebController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/Controllers/WebPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/Company.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/CompanyFxController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/CompanyGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/CompanyHibernateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/FxMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/ObjectNotExists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/PermissionDenied.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/PreexistingEntityException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/ProjectGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/ProjectHibernateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/ProjectTasksGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/ProjectUsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/TaskGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/TaskHibernateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/TasksController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/UserGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/UserHibernateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/UserProjectGSONSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/company.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/hibernateORM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/projectUsers.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/tasks.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/ToDoMain/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/src/testingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/src/testingClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Main/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ff41c09-8655-4d4b-a9d4-6c9b51ede7df" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -93,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="713">
               <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
             </state>
           </provider>
@@ -129,17 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1353">
+            <state relative-caret-position="204">
               <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+            <state relative-caret-position="391">
+              <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -295,6 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -388,7 +335,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1251" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.21242653" />
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.21242653" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Image Layers" />
@@ -397,7 +344,7 @@
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" weight="0.32932165" />
+      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Logcat" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
@@ -442,20 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_company_project.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
@@ -473,15 +406,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1353">
+        <state relative-caret-position="204">
           <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+        <state relative-caret-position="391">
+          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="59" />
         </state>
       </provider>
     </entry>
