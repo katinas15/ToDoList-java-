@@ -6,7 +6,50 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ff41c09-8655-4d4b-a9d4-6c9b51ede7df" name="Default Changelist" comment="" />
+    <list default="true" id="3ff41c09-8655-4d4b-a9d4-6c9b51ede7df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectSubtask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectTaskActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyUsersActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/ListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/SubtaskActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/TaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/TaskActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/helpers/TinkloKontroleris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/REST/RESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/lab/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/Objektai/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/lab/ObjectNotExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/Exceptions/ObjectNotExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/lab/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/Objektai/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/lab/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/Objektai/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bnd/lab/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bnd/Objektai/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company_project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company_project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company_project_subtask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company_project_subtask.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company_project_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company_project_task.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_company_users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_company_users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_listas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_listas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_subtask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_subtask.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_task.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war/5labor_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war/5labor_war.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/WebControllers/WebController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/WebControllers/WebController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/WebControllers/WebController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/classes/WebControllers/WebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/out/artifacts/5labor_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/WebControllers/WebController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/WebControllers/WebController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/WebControllers/WebController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/out/production/5labor/WebControllers/WebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/src/Exceptions/PreexistingEntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/src/WebControllers/WebController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/src/example/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/src/testingClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +57,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
   <component name="ExternalProjectsManager">
@@ -26,89 +68,95 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="102">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/SubtaskActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="76" selection-start-line="76" selection-end-line="76" selection-end-column="60" />
+            <state relative-caret-position="68">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/TaskActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+            <state relative-caret-position="68">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/Exceptions/ObjectNotExists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+            <state relative-caret-position="196">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/ListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+            <state relative-caret-position="68">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyUsersActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="68">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_company_project.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectTaskActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_company.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectSubtask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -122,13 +170,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/TaskActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_company.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyUsersActivity.java" />
       </list>
     </option>
   </component>
@@ -180,9 +230,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
-    <option name="width" value="1251" />
+    <option name="width" value="999" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -191,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -213,30 +262,44 @@
             <path>
               <item name="Bnd" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="bnd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="CompanyActivities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bnd" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="bnd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bnd" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="bnd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Objektai" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bnd" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="bnd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="REST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bnd" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="bnd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="UserActivities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -333,102 +396,109 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1251" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="999" height="1047" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.21242653" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.32932165" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="bottom" id="Debug" weight="0.33260393" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32936078" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26943558" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32932165" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33260393" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/TaskActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="146" column="54" lean-forward="true" selection-start-line="146" selection-start-column="54" selection-end-line="146" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/SubtaskActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/ListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="76" selection-start-line="76" selection-end-line="76" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyUsersActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_company_project.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_company.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectTaskActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyProjectSubtask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectSubtask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyProjectTaskActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/CompanyActivities/CompanyUsersActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="68">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/ListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/SubtaskActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/UserActivities/TaskActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/bnd/Exceptions/ObjectNotExists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

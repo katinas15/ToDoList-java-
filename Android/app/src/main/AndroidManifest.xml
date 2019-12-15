@@ -13,15 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CompanyProjectSubtask"></activity>
-        <activity android:name=".CompanyProjectTaskActivity" />
-        <activity android:name=".CompanyProjectActivity" />
-        <activity android:name=".CompanyUsersActivity" />
-        <activity android:name=".CompanyActivity" />
-        <activity android:name=".SubtaskActivity" />
-        <activity android:name=".TaskActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".CompanyActivities.CompanyProjectSubtask"></activity>
+        <activity android:name=".CompanyActivities.CompanyProjectTaskActivity" />
+        <activity android:name=".CompanyActivities.CompanyProjectActivity" />
+        <activity android:name=".CompanyActivities.CompanyUsersActivity" />
+        <activity android:name=".CompanyActivities.CompanyActivity" />
+        <activity android:name=".UserActivities.SubtaskActivity" />
+        <activity android:name=".UserActivities.TaskActivity" />
+        <activity android:name=".UserActivities.ListActivity" />
+        <activity android:name=".UserActivities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

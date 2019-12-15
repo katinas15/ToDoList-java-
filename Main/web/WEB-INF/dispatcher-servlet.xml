@@ -14,8 +14,10 @@
     <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
-
-                <prop key="*">ctrl</prop>
+                <prop key="/login">login</prop>
+                <prop key="/user">project</prop>
+                <prop key="/project">user</prop>
+                <prop key="/company">company</prop>
             </props>
         </property>
     </bean>
@@ -26,7 +28,19 @@
           p:suffix =".jsp"/>
 
 
-    <bean name="ctrl"
-          class="WebControllers.WebController"
+    <bean name="login"
+          class="WebControllers.WebLoginController"
             />
+
+    <bean name="project"
+          class="WebControllers.WebProjectController"
+    />
+
+    <bean name="user"
+          class="WebControllers.WebUserController"
+    />
+
+    <bean name="company"
+          class="WebControllers.WebCompanyController"
+    />
 </beans>
